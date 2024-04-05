@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Functions</h1>
+
+<p>Call a function which performs a calculation and returns the result:</p>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demoo"></p>
+
+
+<script>
+function myFunction(p1, p2) {
+  return p1 * p2;
+}
+
+let result = myFunction(4, 3);
+document.getElementById("demo1").innerHTML = result;
+
+let x = myFunction(4, 3);
+document.getElementById("demo1").innerHTML = x;
+
+function myFunction(a, b) {
+  return a * b;
+}
+
+function toCelsius(f) {
+  return (5/9) * (f-32);
+}
+
+let value = toCelsius(77);
+document.getElementById("demo2").innerHTML = value;
+
+//
+function toCelsius1(f) {
+  return (5/9) * (f-32);
+}
+
+let value1 = toCelsius1();
+document.getElementById("demo2").innerHTML = value1;
+
+//
+function toCelsius2(f) {
+  return (5/9) * (f-32);
+}
+
+let value2 = toCelsius2;
+document.getElementById("demo3").innerHTML = value2;
+
+//
+let text = "The temperature is " + to_Celsius(77) + " Celsius.";
+document.getElementById("demoo").innerHTML = text;
+
+function to_Celsius(fahrenheit) {
+  return (5/9) * (fahrenheit-32);
+} 
+</script>
+
+</body>
+</html>
